@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --bg-studio: #090c15;
+  --surface-studio: #111524;
+  --surface-variant: #181f36;
+  --border-studio: #242f4e;
+  --primary-violet: #8b5cf6;
+  --accent-cyan: #38bdf8;
+  --accent-pink: #f43f5e;
+  --accent-gold: #f59e0b;
+  --accent-mint: #10b981;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-studio);
+  color: #f8fafc;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090c15;
+}
+::-webkit-scrollbar-thumb {
+  background: #242f4e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Glass & Neon Accents */
+.glass-panel {
+  background: rgba(17, 21, 36, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.glow-violet {
+  box-shadow: 0 0 25px -5px rgba(139, 92, 246, 0.35);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.35);
+}
+
+/* Mobile Safe Areas */
+.safe-bottom {
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+}
